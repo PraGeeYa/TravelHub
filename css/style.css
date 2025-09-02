@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    background-color: #F0F4F8; /* Light professional background */
+    font-family: 'Poppins', sans-serif;
+    color: #2C3E50; /* Dark text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Colors */
+:root {
+    --primary-color: #1E90FF; /* Dodger Blue */
+    --secondary-color: #FFD700; /* Gold */
+    --accent-color: #32CD32; /* Lime Green */
+    --dark-color: #2C3E50; /* Dark Slate */
+    --custom-primary: #1C2526; /* Deep Blue for navbar */
+    --custom-dark: #1C2526; /* Dark footer */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--custom-primary) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+}
+.navbar-brand, .nav-link {
+    color: #FFFFFF !important; /* White text for contrast */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--secondary-color) !important; /* Gold hover */
+}
+.navbar-toggler {
+    border-color: #FFFFFF;
+}
+.navbar-toggler-icon {
+    background-color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--dark-color);
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #FFC107; /* Lighter gold */
+    color: #FFFFFF;
+}
+.btn-success {
+    background-color: var(--accent-color);
+    border: none;
+    color: #FFFFFF;
+}
+.btn-success:hover {
+    background-color: #28A745; /* Darker green */
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+.card-text {
+    color: #6C757D;
+}
+
+/* Call to Action */
+.text-center h3 {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: var(--custom-dark);
+    color: #FFFFFF;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .card-img-top {
+        height: 150px;
+    }
+    .navbar-nav {
+        background-color: var(--custom-primary);
+        padding: 10px 0;
+    }
+}
